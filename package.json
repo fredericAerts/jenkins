@@ -1,0 +1,24 @@
+{
+  "name": "jenkins",
+  "version": "0.1.0",
+  "description": "",
+  "main": "ecosystem.config.js",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "pm2 start ecosystem.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fredericJos/jenkins.git"
+  },
+  "author": "Frederic Aerts <info@fredericaerts.com> (http://fredericaerts.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fredericJos/jenkins/issues"
+  },
+  "homepage": "https://github.com/fredericJos/jenkins#readme"
+}
