@@ -4,6 +4,7 @@ const path = require('path');
 /*  Globals
     ======================================================== */
 const app = express();
+const hostname = 'localhost';
 const port = 3000;
 
 // home
@@ -13,8 +14,9 @@ app.get(['/'], (req, res) => {
 
 /*  Listen
     ======================================================== */
-app.listen(port);
-// eslint-disable-next-line no-console
-console.log(`Listening on port ${port} ...`);
+app.listen(port, hostname, () => {
+  // eslint-disable-next-line no-console
+  console.log(`Server running at http://${hostname}:${port}/`);
+});
 
 module.exports = app;
